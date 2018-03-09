@@ -1,0 +1,5 @@
+org/mohansun/dev/resources/DWTestAppResource.class
+org/mohansun/dev/api/Saying.class
+org/mohansun/dev/DWTestAppApplication.class
+org/mohansun/dev/health/TemplateHealthCheck.class
+org/mohansun/dev/DWTestAppConfiguration.class
