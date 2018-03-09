@@ -5,6 +5,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import org.hibernate.validator.constraints.*;
 import javax.validation.constraints.*;
 
+
+// The parsed configuration fields are used to build a new instance of a configuration class.
+
 // deserialized from the YAML file
 public class DWTestAppConfiguration extends Configuration {
     // TODO: implement service configuration
@@ -18,6 +21,11 @@ public class DWTestAppConfiguration extends Configuration {
 
     @NotEmpty
     private String defaultName = "Stranger";
+
+
+    @NotEmpty
+    private String dateFormat;
+    //dateFormat: yyyy-MM-dd'T'HH:mmZ
 
     // getters and settings
     // @JsonProperty : allows Jackson to both deserialize(read) the properties from a YAML file but also to serialize it.
@@ -41,5 +49,10 @@ public class DWTestAppConfiguration extends Configuration {
     public void setDefaultName(String name) {
         this.defaultName = name;
     }
+
+    @JsonProperty
+    public String getDateFormat() {
+       return dateFormat;
+   }
 
 }

@@ -2,3 +2,5 @@ logging:
   level: INFO
   loggers:
     org.mohansun.dev: DEBUG
+server:
+      rootPath: /api/*

@@ -1,5 +1,7 @@
+org/mohansun/dev/DWTestAppApplication.class
+org/mohansun/dev/resources/EventResource.class
 org/mohansun/dev/resources/DWTestAppResource.class
 org/mohansun/dev/api/Saying.class
-org/mohansun/dev/DWTestAppApplication.class
 org/mohansun/dev/health/TemplateHealthCheck.class
 org/mohansun/dev/DWTestAppConfiguration.class
+org/mohansun/dev/api/Event.class

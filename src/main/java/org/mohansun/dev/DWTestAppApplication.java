@@ -4,8 +4,14 @@ import io.dropwizard.Application;
 import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+
+
 import org.mohansun.dev.resources.DWTestAppResource;
 import org.mohansun.dev.health.TemplateHealthCheck;
+
+import org.mohansun.dev.resources.EventResource;
 
 
 /*
@@ -47,12 +53,18 @@ public class DWTestAppApplication extends Application<DWTestAppConfiguration> {
     public void run(final DWTestAppConfiguration configuration,
                     final Environment environment) {
           final DWTestAppResource resource = new DWTestAppResource( configuration.getTemplate(), configuration.getDefaultName() );
+          DateFormat eventDateFormat = new SimpleDateFormat(configuration.getDateFormat());
 
           final TemplateHealthCheck healthCheck = new TemplateHealthCheck(configuration.getTemplate());
           environment.healthChecks().register("template", healthCheck);
           // When our application starts, we create a new instance of our resource class with the parameters from
           // the configuration file and hand it off to the Environment, which acts like a registry of all the things your application can do.
           environment.jersey().register(resource);
+
+          EventResource eventResource = new EventResource();
+          environment.jersey().register(eventResource);
+
+
 
 }
 

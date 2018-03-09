@@ -1,2 +1,5 @@
-template: Hello, %s!
-defaultName: Ken 
+template: Hello, %s!, Welcome!
+defaultName: Ken
+server:
+      rootPath: /api/*
+dateFormat: yyyy-MM-dd'T'HH:mmZ
