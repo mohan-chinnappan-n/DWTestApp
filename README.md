@@ -4,7 +4,7 @@ How to start the DWTestApp application
 ---
 
 ```
-cat DWTestApp.yml
+$ cat DWTestApp.yml
 
 template: Hello, %s!, Welcome!
 defaultName: Ken
@@ -68,7 +68,7 @@ To see your applications health enter url `http://localhost:8081/healthcheck`
 
 ### Presentation
 
-[Dropwizard Introduction](https://mohan-chinnappan-n.github.io/fwk/dropwizard.html#/home)
+[Dropwizard Introduction](https://mohan-chinnappan-n.github.io/fwk  /dropwizard.html#/home)
 
 ### References
 - [Building RESTful web services With Dropwizard](https://medium.com/@henslejoseph/building-restful-web-services-with-dropwizard-62175dad340e)
