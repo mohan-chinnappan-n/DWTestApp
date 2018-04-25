@@ -1,5 +1,13 @@
 # DWTestApp
 
+### CREATING THE PROJECT USING MAVEN
+
+```bash
+mvn archetype:generate -DarchetypeGroupId=io.dropwizard.archetypes \
+                       -DarchetypeArtifactId=java-simple \
+                       -DarchetypeVersion=1.2.2
+
+```
 How to start the DWTestApp application
 ---
 
