@@ -9,21 +9,22 @@ mvn archetype:generate -DarchetypeGroupId=io.dropwizard.archetypes \
 
 
 Define value for property 'groupId': : org.mohansun.dev
-        Define value for property 'artifactId': : DWTestApp
-        Define value for property 'version':  1.0-SNAPSHOT: :
-        Define value for property 'package':  org.mohansun.dev: :
-        [INFO] Using property: description = null
-        Define value for property 'name': : DWTestApp
-        [INFO] Using property: shaded = true
-        Confirm properties configuration:
-        groupId: org.mohansun.dev
-        artifactId: DWTestApp
-        version: 1.0-SNAPSHOT
-        package: org.mohansun.dev
-        description: null
-        name: DWTestApp
-        shaded: true
+Define value for property 'artifactId': : DWTestApp
+Define value for property 'version':  1.0-SNAPSHOT: :
+Define value for property 'package':  org.mohansun.dev: :
+[INFO] Using property: description = null
+Define value for property 'name': : DWTestApp
+[INFO] Using property: shaded = true
+Confirm properties configuration:
+groupId: org.mohansun.dev
+artifactId: DWTestApp
+version: 1.0-SNAPSHOT
+package: org.mohansun.dev
+description: null
+name: DWTestApp
+shaded: true
 ```
+
 How to start the DWTestApp application
 ---
 
@@ -53,7 +54,9 @@ to build your application
 
 `java -jar target/DWTestApp-1.0-SNAPSHOT.jar server DWTestApp.yml`
 
-4. To check that your application is running enter url :
+4. To check that your application is running:
+
+enter url :
 
 `http://localhost:8080/api/hello-world`
 
